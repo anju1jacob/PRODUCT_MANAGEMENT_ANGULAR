@@ -1,0 +1,28 @@
+<div class="edit-product-container">
+    <h2>Edit Product</h2>
+    <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+      <div>
+        <label for="name">Name*</label>
+        <input id="name" formControlName="name" type="text">
+        <div *ngIf="productForm.get('name')?.invalid && productForm.get('name')?.touched" class="text-danger">
+          Name is required
+        </div>
+      </div>
+      <div>
+        <label for="description">Description*</label>
+        <textarea id="description" formControlName="description"></textarea>
+        <div *ngIf="productForm.get('description')?.invalid && productForm.get('description')?.touched" class="text-danger">
+          Description is required
+        </div>
+      </div>
+      <div>
+        <label for="price">Price*</label>
+        <input id="price" formControlName="price" type="number">
+        <div *ngIf="productForm.get('price')?.invalid && productForm.get('price')?.touched" class="text-danger">
+          Price is required and must be a non-negative number
+        </div>
+      </div>
+      <button type="submit">Update Product</button>
+    </form>
+  </div>
+  

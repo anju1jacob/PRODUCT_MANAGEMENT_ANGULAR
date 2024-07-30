@@ -1,0 +1,12 @@
+<div class="product-list-container">
+    <h2>Product List</h2>
+    <button class="btn btn-create" (click)="navigateToCreate()">Create Product</button>
+    <ul>
+        <li *ngFor="let product of products">
+            {{ product.name }} - ₹{{ product.price }}
+            <button class="btn btn-view" (click)="viewProduct(product.id)">View</button> 
+            <button class="btn btn-edit" (click)="navigateToEdit(product.id)">Edit</button> 
+            <button class="btn btn-delete" (click)="deleteProduct(product.id)">Delete</button> 
+        </li>
+    </ul>
+</div>

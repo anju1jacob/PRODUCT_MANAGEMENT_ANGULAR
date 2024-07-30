@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'ngx-toastr/toastr';
+
+body {
+    background-image: url('https://images.squarespace-cdn.com/content/v1/5be93edecc8fedbce94c180a/1554570142072-LH3WBBGV0W7UP0KKS9YK/Rethink+Retail+Home+Banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    
+  }
