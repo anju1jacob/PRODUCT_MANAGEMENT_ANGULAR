@@ -1,6 +1,14 @@
 # PRODUCTMANAGEMENT
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.7.
+## Overview
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.7. Product Management System with CRUD operations using Angular, 
+JSON Server (or Firebase), and reactive forms. 
+
+## Features
+• Display a list of products on the Home page. <br>
+• Each product item should show the name, price, and a "View" button. <br>
+• Provide buttons to navigate to the Create Product and Edit Product pages. 
 
 ## Development server
 
